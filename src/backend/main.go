@@ -27,10 +27,10 @@ func putHello(c *gin.Context){
 	if err != nil {
 		return 
 	}
-	fmt.Printf("Recieved: %+v",reveicedHello)
+	fmt.Printf("Recieved: %+v\n",reveicedHello)
 	var respMsg resposeMsg
 	respMsg.Msg = fmt.Sprintf("Hi %s",reveicedHello.Name) 
-	c.JSON(http.StatusAccepted,respMsg)
+	c.JSON(http.StatusCreated,respMsg)
 }
 
 func main() {
