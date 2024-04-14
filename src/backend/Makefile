@@ -9,13 +9,13 @@ EXE = backend
 all: Build
 
 Build: 
-        go build -o bin/$(EXE)
+		go build -o bin/$(EXE)
 
 clean: 
-        rm ./bin/$(EXE)
+		rm ./bin/$(EXE)
 
 run:
-        ./$(EXE)
+		./$(EXE)
 
 deps:
-        go get -d ./...
+		go get -d ./...
